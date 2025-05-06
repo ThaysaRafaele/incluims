@@ -1,0 +1,77 @@
+@import '../../../assets/styles/variables';
+
+.main-header {
+  background-color: $primary-green !important; // #365A08
+  padding: 0.75rem 0;
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-brand {
+    margin: 0;
+    
+    .brand-text {
+      color: $white;
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+  }
+  
+  .login-link {
+    color: $white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    
+    &:hover, &:focus {
+      color: $primary-green-light;
+    }
+  }
+  
+  .desktop-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    .nav-link {
+      color: $white;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      
+      &:hover, &:focus {
+        color: $primary-green-light;
+      }
+    }
+    
+    .navbar-brand {
+      color: $white;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+// Ajustes específicos para mobile
+@media (max-width: 991px) {
+  .main-header {
+    .container {
+      justify-content: space-between;
+    }
+    
+    .navbar-brand {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .login-link {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}

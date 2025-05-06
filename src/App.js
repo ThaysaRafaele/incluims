@@ -1,24 +1,50 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <Layout>
+            <Home />
+          </Layout>
+        } />
+        <Route path="/map" element={
+          <Layout>
+            <div>Página do Mapa (Em construção)</div>
+          </Layout>
+        } />
+        <Route path="/about" element={
+          <Layout>
+            <div>Sobre o INCLUIMS (Em construção)</div>
+          </Layout>
+        } />
+        <Route path="/add-place" element={
+          <Layout>
+            <div>Adicionar Local (Em construção)</div>
+          </Layout>
+        } />
+        <Route path="/login" element={
+          <Layout>
+            <div>Login (Em construção)</div>
+          </Layout>
+        } />
+        <Route path="/register" element={
+          <Layout>
+            <div>Cadastro (Em construção)</div>
+          </Layout>
+        } />
+        <Route path="*" element={
+          <Layout>
+            <div>Página não encontrada</div>
+          </Layout>
+        } />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

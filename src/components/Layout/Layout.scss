@@ -1,0 +1,45 @@
+@import '../../assets/styles/variables';
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  .main-content {
+    flex: 1;
+    padding-top: 70px; 
+    display: flex;
+    flex-direction: column;
+    
+    // Estilos para quando o conteúdo não preenche a tela inteira
+    > div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  // Layout especial para a página de mapa
+  &.map-page-layout {
+    .main-content {
+      padding-bottom: 0; 
+      
+      > div {
+        flex: 1;
+      }
+    }
+    
+    footer {
+      display: none; 
+    }
+  }
+}
+
+// Responsividade
+@media (max-width: $breakpoint-lg) {
+  .app-layout {
+    .main-content {
+      padding-top: 60px;
+    }
+  }
+}
