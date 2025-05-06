@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
+import MapPage from './pages/MapPage';
 import Home from './pages/Home';
 import './App.css';
 
@@ -13,11 +14,13 @@ function App() {
             <Home />
           </Layout>
         } />
+
         <Route path="/map" element={
           <Layout>
-            <div>Página do Mapa (Em construção)</div>
+            <MapPage />
           </Layout>
         } />
+        
         <Route path="/about" element={
           <Layout>
             <div>Sobre o INCLUIMS (Em construção)</div>
