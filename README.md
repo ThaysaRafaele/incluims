@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+# INCLUIMS - Plataforma de Acessibilidade para Pessoas com Deficiência
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo do INCLUIMS](./src/assets/logo.png)
 
-## Available Scripts
+[![Licença: MIT](https://img.shields.io/badge/Licença-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-18.2.0-61dafb.svg)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0.4-3178c6.svg)](https://www.typescriptlang.org/)
+[![Styled Components](https://img.shields.io/badge/Styled%20Components-6.0.0-db7093.svg)](https://styled-components.com/)
 
-In the project directory, you can run:
+## 📋 Sobre o Projeto
 
-### `yarn start`
+O INCLUIMS é uma plataforma web desenvolvida para centralizar informações relevantes sobre serviços, direitos, locais com acessibilidade e oportunidades para pessoas com deficiência física em Campo Grande - MS. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O projeto busca preencher uma lacuna significativa no acesso à informação para este público, oferecendo uma interface acessível e adaptada às diferentes necessidades dos usuários.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🎯 Objetivo
 
-### `yarn test`
+Promover maior autonomia e inclusão social para pessoas com deficiência física através da democratização do acesso à informação relevante para o seu dia a dia.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Funcionalidades
 
-### `yarn build`
+- **Mapa de Acessibilidade**: Localização georreferenciada de locais com acessibilidade em Campo Grande
+- **Diretório de Serviços**: Catálogo organizado de serviços especializados para pessoas com deficiência
+- **Banco de Informações Legais**: Repositório de legislação, direitos e políticas públicas em linguagem acessível
+- **Fórum Comunitário**: Espaço para troca de experiências e suporte mútuo entre usuários
+- **Notícias e Eventos**: Divulgação de informações atualizadas sobre inclusão e acessibilidade
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Tecnologias Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React](https://reactjs.org/) - Biblioteca JavaScript para construção de interfaces
+- [TypeScript](https://www.typescriptlang.org/) - Superset tipado de JavaScript
+- [Styled Components](https://styled-components.com/) - Biblioteca para estilização de componentes
+- [React Router](https://reactrouter.com/) - Navegação entre páginas
+- [Axios](https://axios-http.com/) - Cliente HTTP para requisições
+- [Leaflet](https://leafletjs.com/) - Biblioteca para mapas interativos
+- [Jest](https://jestjs.io/) - Framework de testes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 Requisitos de Sistema
 
-### `yarn eject`
+- Node.js 18.x ou superior
+- npm 9.x ou superior
+- Navegador moderno compatível com ES6
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📥 Instalação
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Siga os passos abaixo para configurar o ambiente de desenvolvimento:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# Clone este repositório
+git clone https://github.com/seu-usuario/incluims.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Acesse a pasta do projeto
+cd incluims
 
-## Learn More
+# Instale as dependências
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Execute a aplicação em modo de desenvolvimento
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A aplicação estará disponível em `http://localhost:3000`.
 
-### Code Splitting
+## 🔨 Estrutura do Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+/src
+  /assets         # Imagens, ícones e recursos estáticos
+  /components     # Componentes reutilizáveis
+    /ui           # Componentes de interface (botões, inputs, etc)
+    /layout       # Componentes estruturais (header, footer, etc)
+    /features     # Componentes específicos de funcionalidades
+  /contexts       # Contextos React para gerenciamento de estado
+  /hooks          # Hooks personalizados
+  /pages          # Componentes de página
+  /services       # Serviços de API e integração externa
+  /styles         # Estilos globais e temas
+  /utils          # Funções utilitárias
+  /types          # Definições de tipos TypeScript
+```
 
-### Analyzing the Bundle Size
+## ♿ Acessibilidade
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+O INCLUIMS foi desenvolvido seguindo as diretrizes WCAG 2.1 nível AA, implementando:
 
-### Making a Progressive Web App
+- HTML semântico e estruturado
+- Contraste adequado para elementos visuais
+- Suporte completo à navegação por teclado
+- Atributos ARIA para melhor interação com tecnologias assistivas
+- Textos alternativos para conteúdo não-textual
+- Temas de cores alternativos (modo escuro, alto contraste)
+- Redimensionamento de texto sem perda de funcionalidade
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧪 Testes
 
-### Advanced Configuration
+O projeto utiliza Jest e React Testing Library para testes. Para executar os testes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+# Executar todos os testes
+npm test
 
-### Deployment
+# Executar testes com cobertura
+npm test -- --coverage
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 Guia de Contribuição
 
-### `yarn build` fails to minify
+Contribuições são bem-vindas! Para contribuir:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Implemente as mudanças e adicione testes quando aplicável
+4. Execute os testes para garantir que tudo está funcionando
+5. Commit suas alterações (`git commit -m 'Adiciona nova funcionalidade'`)
+6. Push para a branch (`git push origin feature/nova-funcionalidade`)
+7. Abra um Pull Request
+
+Por favor, consulte o arquivo [CONTRIBUTING.md](./CONTRIBUTING.md) para mais detalhes sobre nosso código de conduta e processo de desenvolvimento.
+
+## 📊 Roadmap
+
+- **Versão 1.1** (Junho/2025)
+  - Sistema de avaliação colaborativa de locais
+  - Perfis de usuário personalizáveis
+  
+- **Versão 1.2** (Agosto/2025)
+  - Integração com serviços públicos
+  - Notificações personalizadas
+  
+- **Versão 2.0** (Dezembro/2025)
+  - Aplicativo mobile nativo
+  - Recursos de acessibilidade avançados
+
+## 👥 Equipe
+
+- **Thaysa Lacerda** - Desenvolvedora Frontend e Idealizadora
+
+## 📜 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](./LICENSE.md) para detalhes.
+
+## 📞 Contato
+
+Para dúvidas, sugestões ou parcerias, entre em contato:
+
+- Email: thaysarafaele@gmail.com
+
+---
+
+Desenvolvido com ❤️ em Campo Grande, MS - Brasil
