@@ -1,6 +1,6 @@
 # INCLUIMS - Plataforma de Acessibilidade para Pessoas com Deficiência
 
-![Logo do INCLUIMS](./src/assets/logo.png)
+![Logo do INCLUIMS](./src/assets/images/IncluiMS_Logos/4.png)
 
 [![Licença: MIT](https://img.shields.io/badge/Licença-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.2.0-61dafb.svg)](https://reactjs.org/)
