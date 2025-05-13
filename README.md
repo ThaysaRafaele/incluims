@@ -25,6 +25,34 @@ Promover maior autonomia e inclusão social para pessoas com deficiência físic
 - **Fórum Comunitário**: Espaço para troca de experiências e suporte mútuo entre usuários
 - **Notícias e Eventos**: Divulgação de informações atualizadas sobre inclusão e acessibilidade
 
+## 📚 Glossário Técnico
+
+Para padronizar a terminologia utilizada no projeto, adotamos as seguintes definições:
+
+### Termos de Acessibilidade
+
+- **Acessibilidade**: Qualidade do que é acessível; facilidade de acesso, de obtenção.
+- **WCAG**: Web Content Accessibility Guidelines - Diretrizes de Acessibilidade para Conteúdo Web.
+- **Tecnologia Assistiva**: Produtos, equipamentos ou sistemas que melhoram as capacidades funcionais de pessoas com deficiência.
+- **Leitor de Tela**: Software que lê o conteúdo da tela para pessoas com deficiência visual.
+- **Alto Contraste**: Modo de visualização que aumenta significativamente a diferença entre cores de fundo e primeiro plano.
+- **Navegação por Teclado**: Uso do teclado (em vez do mouse) para navegar na interface.
+
+### Tipos de Acessibilidade em Locais Físicos
+
+- **Acessibilidade Física**: Características que permitem acesso e uso autônomo por pessoas com mobilidade reduzida.
+  - **Rampa de Acesso**: Plano inclinado que substitui ou complementa escadas.
+  - **Piso Tátil**: Piso com texturas em relevo para orientação de pessoas com deficiência visual.
+  - **Banheiro Adaptado**: Banheiro com barras de apoio, espaço para manobra de cadeira de rodas e outras adaptações.
+
+- **Acessibilidade Visual**: Recursos que facilitam o acesso de pessoas com deficiência visual.
+  - **Braile**: Sistema de escrita tátil utilizado por pessoas cegas ou com baixa visão.
+  - **Audiodescrição**: Narração adicional que descreve elementos visuais importantes.
+
+- **Acessibilidade Auditiva**: Recursos para pessoas com deficiência auditiva.
+  - **Libras**: Língua Brasileira de Sinais, utilizada pela comunidade surda brasileira.
+  - **Legendagem**: Transcrição textual do conteúdo falado ou dos sons relevantes.
+
 ## 🚀 Tecnologias Utilizadas
 
 - [React](https://reactjs.org/) - Biblioteca JavaScript para construção de interfaces
